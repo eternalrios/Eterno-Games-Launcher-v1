@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB17D10E-175E-47F3-AD87-7D84AB3DBC71}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>alexander</RootNamespace>
+    <AssemblyName>Eterno Games</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Material Icons_e01e%280%29.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\..\Downloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI.WinForms_v1.0.0.9\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\..\..\Downloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI2.WinForms_v2.0.0.6\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip">
+      <HintPath>..\..\..\Desktop\UpLauncherSRC\Launcher v2\Ionic.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TransControl_src">
+      <HintPath>..\..\..\Downloads\TransControl_src\TransControl_src\TransControl_src.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prchat.Designer.cs">
+      <DependentUpon>prchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principal.Designer.cs">
+      <DependentUpon>principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="prnoticias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="prnoticias.Designer.cs">
+      <DependentUpon>prnoticias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sclanzador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sclanzador.Designer.cs">
+      <DependentUpon>sclanzador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="screguistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="screguistro.Designer.cs">
+      <DependentUpon>screguistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZipEntry.cs" />
+    <Compile Include="ZipFile.cs" />
+    <Compile Include="ZipFile1.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prchat.resx">
+      <DependentUpon>prchat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principal.resx">
+      <DependentUpon>principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="prnoticias.resx">
+      <DependentUpon>prnoticias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sclanzador.resx">
+      <DependentUpon>sclanzador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="screguistro.resx">
+      <DependentUpon>screguistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include=".editorconfig" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg_maj-2-56.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título-1-Recuperado-Recuperado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngocean.com %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\little_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dibujos-anime-a-lapiz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mini2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1184920.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\893596.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1194927.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goserver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1105517.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mini21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feature_BR_fr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\los trofeos celeste llegaron.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reformo de sets clase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\web11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e60e%282%29_64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e63a%280%29_64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e65a%281%29_64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e600%286%29_64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e601%285%29_64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e602%284%29_64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icomoon_e606%283%29_64.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Discord11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FACE11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\feature_BR_fr1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tofu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FACE111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Material Icons_e01e%280%29.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
